@@ -1,72 +1,47 @@
-# Project Name
+## Overview
 
-example image:
+The Streamlit app visualizes and filters the auto MPG dataset, showcasing the relationship between engine size (displacement) and highway fuel mileage. It also includes a map visualization of car sharing data.
 
+## Features
 
-![alternative text](reports/img/pic01.jpg)
+- **Scatter Plot**: Displays a scatter plot of engine size versus highway fuel mileage, with the option to show class means.
+- **Interactive Selectors**: Users can choose a specific year from the dropdown and toggle whether to show class means on the scatter plot.
+- **Plot Type**: Users can switch between Matplotlib and Plotly plots.
+- **Streamlit Map**: Displays a map with car sharing data, showing the locations where cars are shared.
 
+## Dependencies
 
-#### -- Project Status: [Active, On-Hold, Completed]
+- Streamlit
+- pandas
+- matplotlib
+- plotly
+- urllib
+- json
+- copy
 
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project. Limit to a short paragraph, 3-6 Sentences)
+## Usage
 
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact]
-* If you do not have a partner leave this section out
+To run this project, follow these steps:
 
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+1. Ensure all the dependencies are installed. You can install them using `pip`:
 
-### Technologies
-* R
-* Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc.
+```bash
 
-## Project Description
-(Provide more detailed overview of the project.
-Talk a bit about your data sources and what questions and hypothesis you are exploring.
-What specific data analysis/visualization and modelling work are you using to solve the
-problem? What blockers and challenges are you facing?
-Feel free to number or bullet point things here)
+pip install streamlit pandas matplotlib plotly
 
-## Getting Started
+Download the auto MPG dataset (mpg.csv) and place it in the data/ directory.
+Run the Streamlit app by executing the Python script:
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+streamlit run app.py
 
-    *If using offline data mention that and how they may obtain the data from the froup)*
+Data
+The dataset used in this project is the auto MPG dataset from UCI Machine Learning Repository, sourced from UCI Machine Learning Repository.
 
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+Contributing
+Contributions to this project are welcome. Please follow these guidelines when submitting a pull request:
 
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages)
-create another "setup.md" file and link to it here*
-
-5. Follow setup [instructions](Link to file)
-
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
-
-
-## Contributing Members
-
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])**
-
-#### Other Members:
-
- - [Full Name](https://github.com/[github handle])
- - [Full Name](https://github.com/[github handle])
+Ensure that your code adheres to the project's style guidelines.
+Include tests for any new features or changes.
+Document any new features or changes in the README.md.
+License
+This project is licensed under the MIT License. ```
